@@ -29,7 +29,11 @@ function App() {
   return (
     <div className="app">
       <div className="app__header">
-        <h2 className="header__title"><span style={{color: "#3a8ff3"}}>PAY</span><span style={{color:"#26be6b"}}>FAZZ</span> NEWS</h2>
+        <h2 className="header__title">
+          <span style={{color: "#3a8ff3"}}>PAY</span>
+          <span style={{color:"#26be6b", paddingRight:"8px", borderRight:"2px solid black", marginRight:"6px"}}>FAZZ</span>
+          NEWS
+        </h2>
       </div>
       <div className="app__body">
       { !loading && listArticle ?
@@ -53,6 +57,13 @@ function App() {
             )
           })
       : <SyncLoader loading={loading} />}
+      </div>
+      <div className="app__footer">
+        <h2 className="header__title">
+          <span style={{color: "#3a8ff3"}}>PAY</span>
+          <span style={{color:"#26be6b", paddingRight:"8px", borderRight:"2px solid white", marginRight:"6px"}}>FAZZ</span>
+          TEST WEB
+        </h2>
       </div>
     </div>
   );
