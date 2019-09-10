@@ -1,0 +1,51 @@
+.card {
+  margin: 24px 0px;
+  -webkit-box-shadow: -1px 22px 24px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 22px 24px -13px rgba(0,0,0,0.75);
+  box-shadow: -1px 22px 24px -13px rgba(0,0,0,0.75);
+  max-width: 800px;
+  min-width: 300px;
+}
+.card__text {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+}
+.card__title {
+  font-family: 'Arvo', serif;
+}
+.card_image_container img {
+  width: 100%;
+  height: auto;
+}
+.card_text_container {
+  text-align: left;
+  padding: 16px;
+}
+.card_text_author {
+  font-weight: 600;
+}
+.card_text_date {
+  display: inline-block;
+  margin: 0;
+  padding: 0 6px;
+  padding-left: 0;
+  border-right: 2px solid;
+}
+.card_text_time {
+  display: inline-block;
+  margin: 0;
+  padding: 0 6px;
+}
+.button_read_more {
+  font-family: 'Roboto Slab', serif;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: #1b1b1e;
+  border-radius: 50px;
+  color: #ffc425;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
