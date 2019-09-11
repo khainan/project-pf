@@ -2,6 +2,13 @@
   min-height: 100vh;
   padding-top: 50px;
 }
+.app__logo {
+  margin-right: 6px;
+  padding-right: 6px;
+  border-right: 2px solid black;
+  color: white;
+  font-style: italic;
+}
 .app__body {
   min-height: 80vh;
   display: flex;
@@ -15,8 +22,8 @@
 .app__header {
   position: fixed;
   margin-top: -52px;
-  background: white;
-  color: black;
+  background: #1b1b1e;
+  color: #ffc425;
   width: 100%;
   height: 60px;
   display: flex;
@@ -34,10 +41,15 @@
 }
 .app__footer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 200px;
-  align-items: center;
   background: #1b1b1e;
   color: #ffc425;
   margin-top: 50px;
+}
+.footer__text {
+  color:white
 }

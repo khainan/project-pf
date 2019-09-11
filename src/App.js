@@ -31,9 +31,8 @@ function App() {
     <div className="app">
       <div className="app__header">
         <h2 className="header__title">
-          <span style={{color: "#3a8ff3"}}>PAY</span>
-          <span style={{color:"#26be6b", paddingRight:"8px", borderRight:"2px solid black", marginRight:"6px"}}>FAZZ</span>
-          NEWS PORTAL
+          <span className="app__logo">NEWS</span>
+          PORTAL
         </h2>
       </div>
       <div className="app__body">
@@ -62,10 +61,11 @@ function App() {
       </div>
       <div className="app__footer">
         <h2 className="header__title">
-          <span style={{color: "#3a8ff3"}}>PAY</span>
-          <span style={{color:"#26be6b", paddingRight:"8px", borderRight:"2px solid white", marginRight:"6px"}}>FAZZ</span>
-          TEST WEB
+          <span className="app__logo">NEWS</span>
+          PORTAL
         </h2>
+        <p className="footer__text">this is just a dummy web created using React Hooks</p>
+        <p className="footer__text">Made by Khainan</p>
       </div>
     </div>
   );
