@@ -32,7 +32,7 @@ function App() {
         <h2 className="header__title">
           <span style={{color: "#3a8ff3"}}>PAY</span>
           <span style={{color:"#26be6b", paddingRight:"8px", borderRight:"2px solid black", marginRight:"6px"}}>FAZZ</span>
-          NEWS
+          NEWS PORTAL
         </h2>
       </div>
       <div className="app__body">
@@ -50,6 +50,7 @@ function App() {
                 image={val.urlToImage}
                 publishedAt={date}
                 readMore={(url) => handleReadMore(url)}
+                source={val.source.name}
                 title={val.title}
                 time={time}
                 url={val.url}

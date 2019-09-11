@@ -8,6 +8,7 @@ function NewsCard(props){
         <img src={props.image} alt={props.image} />
       </div>
       <div className="card_text_container">
+        <div className="card__text card_text_source">Source: {props.source}</div>
         <h2 className="card__title">{props.title}</h2>
         <div className="card_author_container">
           <p className="card__text card_text_author">{props.author}</p>
