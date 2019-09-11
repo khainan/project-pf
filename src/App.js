@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import NewsCard from './NewsCard';
 import { SyncLoader } from 'react-spinners';
+import moment from 'moment';
 
 function App() {
 
@@ -38,8 +39,8 @@ function App() {
       <div className="app__body">
       { !loading && listArticle ?
           listArticle.map((val, index) => {
-            const date = val.publishedAt.slice(0, 10)
-            const time = val.publishedAt.slice(11, 16)
+            const date = moment(val.publishedAt).format("DD MMM, YYYY")
+            const time = moment(val.publishedAt).format("HH:MM")
 
             return(
               <NewsCard
