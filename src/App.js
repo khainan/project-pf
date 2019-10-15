@@ -11,8 +11,7 @@ function App() {
   const [loading, setLoading] = useState(true)
 
   const getData = async () => {
-    await axios.get("https://newsapi.org/v2/everything?q=bitcoin&from=2019-09-15&sortBy=publishedAt&apiKey=4dd0dfded0a44440a08855202e3835e9
-")
+    await axios.get("https://newsapi.org/v2/everything?q=bitcoin&from=2019-09-15&sortBy=publishedAt&apiKey=4dd0dfded0a44440a08855202e3835e9")
       .then(res => {
         setArcticle(res.data.articles)
         setLoading(false)
