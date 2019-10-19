@@ -11,7 +11,7 @@ function App() {
   const [loading, setLoading] = useState(true)
 
   const getData = async () => {
-    await axios.get("https://www.mocky.io/v2/5daac2753100002d00becd9d")
+    await axios.get("http://www.mocky.io/v2/5daac2753100002d00becd9d")
       .then(res => {
         setArcticle(res.data.articles)
         setLoading(false)
